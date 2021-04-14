@@ -1,0 +1,15 @@
+MACRO
+&LAB    SQR &ARG1,&ARG2,&ARG3
+&LAB    L   1,&ARG1
+        M   1,&ARG2
+        ST  1,&ARG3
+MEND
+    START   100
+    A   1,P
+L1  SQR P,Q,R
+    S   1,P
+L2  SQR P,Q,R
+P   DC  F'7'
+Q   DC  F8''
+R   DC  F'4'
+END
